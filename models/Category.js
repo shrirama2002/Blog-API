@@ -3,9 +3,16 @@ const mongoose = require('mongoose');
 
 // create schema
 const categorySchema = mongoose.Schema({
-    name : String,
-    description : String
-},{
+    name : {
+        type : String,
+        required : true
+    },
+    description: {
+        type : String,
+        required : [true, "Please provide description"]
+    }
+},
+{
     timestamps : true
 });
 
