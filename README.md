@@ -1,4 +1,4 @@
-This is my learning project which in which I am implementing
+This is my learning project in which I am implementing: 
 =
 - RESTful API's
 - HTTP Methods(GET,POST,PUT,DELETE)
