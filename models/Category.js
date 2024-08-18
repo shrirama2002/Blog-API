@@ -1,6 +1,6 @@
 // require mongoose
 const mongoose = require('mongoose');
-
+const { type } = require('express/lib/response')
 // create schema
 const categorySchema = mongoose.Schema({
     name : {
