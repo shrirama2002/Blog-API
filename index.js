@@ -7,7 +7,12 @@ connectDB();
 
 const app = express();
 
+//import category route
 const categoryRoute = require('./routes/categories.js');
+
+//import blog route
+const blogRoute = require('./routes/blog.js');
+
 // it is very very important and it
 // allows us to read the request body
 
@@ -15,6 +20,8 @@ app.use(express.json())
 
 
 app.use('/categories', categoryRoute)
+
+app.use('/blogs',blogRoute)
 
 
 //home route

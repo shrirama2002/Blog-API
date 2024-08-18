@@ -12,7 +12,7 @@ const blogSchema = mongoose.Schema({
     body:{
         type: String,
         required: [true,"Can not be empty"],
-        minLength:[250,"body can not be less than 250 characters"]
+        minLength:[10,"body can not be less than 250 characters"]
     },
     likes:{
         type: Number,
